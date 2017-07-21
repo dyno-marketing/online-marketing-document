@@ -1,5 +1,14 @@
-Các page cần cấp quyền quản trị để có thể thêm vào chatbot
+#### Bước 1
+Cấp quyền quản trị page cho Smartpx để có thể thêm vào chatbot
+
+#### Bước 2
+Smartpx sẽ duyệt page và add vào chatbot
+
+#### Bước 3
+Sau khi duyệt bạn gắn đoạn script này vào bất kỳ chỗ nào trên trang của bạn mà bạn muốn hiện nút "Bắt đầu"
+
 `your_domain` là tên miền mà bạn chèn đoạn script
+
 `your_page_id` là id của page mà bạn muốn gửi tin nhắn
 
 ```html
