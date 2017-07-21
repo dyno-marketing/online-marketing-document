@@ -2,10 +2,10 @@
 Tạo 1 page để bạn có thể gửi messenger cho người dùng. Cấp quyền quản trị page cho Smartpx để có thể thêm vào chatbot
 
 ### Bước 2
-Smartpx sẽ duyệt page và add vào chatbot
+Bạn hay cung cấp các tên miền (đầy đủ cả http/https) mà bạn muốn tracking người dùng cho Smartpx
 
 ### Bước 3
-Sau khi duyệt bạn gắn đoạn script này vào bất kỳ chỗ nào trên trang của bạn mà bạn muốn hiện nút "Bắt đầu"
+Sau khi Smartpx thêm các tên miền bạn gắn đoạn script này vào bất kỳ chỗ nào trên trang của bạn mà bạn muốn hiện nút "Bắt đầu"
 
 `your_domain` là tên miền trang web mà bạn chèn đoạn script
 
