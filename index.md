@@ -15,3 +15,11 @@ Sau khi Smartpx thêm các tên miền bạn gắn đoạn script này vào bấ
 <div id="started_button" origin="http://your_domain" page_id="your_page_id"></div>
 <script src="http://smartpx.io/sdk.min.js"></script>
 ```
+### Bước 4
+Để truy vấn các api thông tin người dùng, cần phải có session_id. Để lấy session_id thì lấy qua đoạn script sau
+
+```html
+<script>
+var session_id = readCookie('smartpx_session_id');
+</script>
+```
