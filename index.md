@@ -17,10 +17,11 @@ var session_id = readCookie('smartpx_session_id');
 ```
 
 ### Step 3 
-Call SmartPx api to get demographic information and interest of ```session_id``` which belongs to specific user you want to target:
+Call SmartPx api to get demographic information and interest of ```session_id``` which belongs to specific user you want to target
 
-## Api Specs: 
-Base Url: ```http://api.wifi.dyno.me```
+
+## Api: 
+#### Base Url: ```http://api.wifi.dyno.me```
 
 ### Customer Demographic
 Path: /profiles/sessions/:session_id/demographic
