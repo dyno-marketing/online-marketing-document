@@ -19,14 +19,13 @@ var session_id = readCookie('smartpx_session_id');
 ### Step 3 
 Call SmartPx api to get demographic information and interest of ```session_id``` which belongs to specific user you want to target
 
-
 ## Api: 
 #### Base Url: ```http://api.wifi.dyno.me```
 
 ### Customer Demographic
 Path: /profiles/sessions/:session_id/demographic
-Method: Get
-Sample response: 
+* Method: Get
+* Sample response: 
 ```json
 {"has_error":false,"data":{"demographic":[{"firstName":"Tu","lastName":"Pham","gender":false,"middleName":"Phuong","locale":"en_US","genderType":1,"sessionId":"ycsq99fao1f1501125848939"}]}}
 ```
@@ -34,16 +33,16 @@ Sample response:
 
 ### Customer Interest
 Path: /profiles/sessions/:session_id/interest
-Method: Get
-Sample response: 
+* Method: Get
+* Sample response: 
 ```json
 {"has_error":false,"data":{"top_categories":[{"score":"0","categoryId":"e4f43e90-670c-11e7-bbb9-2477038c8d04"},{"score":"83","categoryId":"a6156d20-670c-11e7-bbb9-2477038c8d04"},{"score":"96","categoryId":"c4f21f40-670c-11e7-bbb9-2477038c8d04"},{"score":"63","categoryId":"a20cdd30-670c-11e7-bbb9-2477038c8d04"},{"score":"0","categoryId":"1cda0c50-670c-11e7-bbb9-2477038c8d04"},{"score":"47","categoryId":"d174f120-670c-11e7-bbb9-2477038c8d04"}]}}
 ```
 
 ### Get all interest categories
 Path: /categories
-Method: Get
-Sample response: 
+* Method: Get
+* Sample response: 
 ```json
 {"has_error":false,"data":{"categories":[{"id":"06d99240-670c-11e7-bbb9-2477038c8d04","name":"Pets","parentId":"f895fd90-670b-11e7-bbb9-2477038c8d04","path":"f895fd90-670b-11e7-bbb9-2477038c8d04","created":1499868701,"updated":0,"deleted":0},{"id":"090c0d30-670d-11e7-bbb9-2477038c8d04","name":"Restaurant","parentId":"ec7d90d0-670c-11e7-bbb9-2477038c8d04","path":"ec7d90d0-670c-11e7-bbb9-2477038c8d04","created":1499869134,"updated":0,"deleted":0},{"id":"0aec5b60-670c-11e7-bbb9-2477038c8d04","name":"Politics & Social Issues","parentId":"f895fd90-670b-11e7-bbb9-2477038c8d04","path":"f895fd90-670b-11e7-bbb9-2477038c8d04","created":1499868707,"updated":0,"deleted":0},{"id":"11989ea0-670d-11e7-bbb9-2477038c8d04","name":"Family & Relationship","parentId":"","path":"","created":1499869148,"updated":0,"deleted":0},{"id":"158b2b00-670c-11e7-bbb9-2477038c8d04","name":"Do it yourself (DIY)","parentId":"f895fd90-670b-11e7-bbb9-2477038c8d04","path":"f895fd90-670b-11e7-bbb9-2477038c8d04","created":1499868725,"updated":0,"deleted":0},{"id":"1cda0c50-670c-11e7-bbb9-2477038c8d04","name":"Travel","parentId":"f895fd90-670b-11e7-bbb9-2477038c8d04","path":"f895fd90-670b-11e7-bbb9-2477038c8d04","created":1499868737,"updated":0,"deleted":0}]}}
 ```
