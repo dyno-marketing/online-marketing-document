@@ -1,18 +1,10 @@
 ### Bước 1
-Bạn cung cấp các tên miền (đầy đủ cả http/https) mà bạn muốn tracking người dùng cho Smartpx
-
-### Bước 2
-Sau khi Smartpx thêm các tên miền bạn gắn đoạn script này vào bất kỳ chỗ nào trên trang của bạn mà bạn muốn hiện nút "Bắt đầu"
-
-`your_domain` là tên miền trang web mà bạn chèn đoạn script
-
-`your_page_id` là id của page mà bạn đã cấp quyền
+Chèn đoạn script sau ở trong thẻ `<head>`
 
 ```html
-<div id="started_button" origin="http://your_domain" page_id="your_page_id"></div>
-<script src="http://smartpx.io/sdk.min.js"></script>
+<script src="http://smartpx.io/sdk/smartpx.min.js?v=1.0"></script>
 ```
-### Bước 3
+### Bước 2
 Để truy vấn các api thông tin người dùng, cần phải có session_id. Để lấy session_id thì lấy qua đoạn script sau
 
 ```html
