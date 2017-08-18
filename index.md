@@ -7,7 +7,7 @@ Insert the script bellow into the `<head>` element of client’s website
 <script src="http://smartpx.io/sdk/smartpx.min.js?v=1.0"></script>
 <script type="text/javascript">
 	Smartpx.init({
-		is_redirect: true
+		is_check: true
 	});
 </script>
 ```
@@ -17,7 +17,7 @@ Every time a customer visits SmartPx integrated website, our system will write a
 Get SmartPx ```session_id``` via this script:
 ```html
 <script>
-var session_id = readCookie('smartpx_session_id');
+var session_id = Smartpx.getSession();
 </script>
 ```
 
