@@ -5,6 +5,11 @@
 Insert the script bellow into the `<head>` element of client’s website
 ```html
 <script src="http://smartpx.io/sdk/smartpx.min.js?v=1.0"></script>
+<script type="text/javascript">
+		Smartpx.init({
+			is_redirect: true
+		});
+</script>
 ```
 Every time a customer visits SmartPx integrated website, our system will write a data field called ```session_id``` into his/her browser’s cookie, which will allow us to transparently integrate with each other.
 
