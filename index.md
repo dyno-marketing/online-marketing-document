@@ -7,7 +7,8 @@ Insert the script bellow into the `<head>` element of client’s website
 <script src="http://smartpx.io/sdk/smartpx.min.js?v=1.0"></script>
 <script type="text/javascript">
 	Smartpx.init({
-		is_check: true
+		is_check: true,
+		custom_fields: { "source": "7" }
 	});
 </script>
 ```
