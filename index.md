@@ -33,7 +33,7 @@ Path: /profiles/sessions/:session_id/demographic
 * Method: Get
 * Sample response: 
 ```json
-{"has_error":false,"data":{"demographic":{"firstName":"Tu","lastName":"Pham","genderType":1,"middleName":"Phuong","locale":"en_US","sessionId":"ycsq99fao1f1501125848939", "age_group":"2"}}}fv
+{"has_error":false,"data":{"demographic":{"firstName":"Tu","lastName":"Pham","genderType":1,"middleName":"Phuong","locale":"en_US","sessionId":"ycsq99fao1f1501125848939", "age_group":"2"}}}
 ```
 * Notes:
 - age_group: 0: 13 -> 17, 1: 18 -> 24, 2: 25 -> 34, 3: 35 -> 44, 4: 45 -> 54, 5: 55 -> 64, 6: 65+
