@@ -9,7 +9,7 @@ Insert the script bellow into the `<head>` element of client’s website
 	Smartpx.init({
 		is_check: false, // Redirect to Social Id detection service, default false
 		custom_fields: { 
-                        "source": <source_id>, // Required 
+                        "source": <source_id>, // Require
                         "facebook_id": <facebook_id>, // Not require 
                         "phone": <phone>, // Not require
                         "email": <email>, // Not require
