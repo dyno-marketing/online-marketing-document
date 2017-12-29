@@ -7,8 +7,13 @@ Insert the script bellow into the `<head>` element of client’s website
 <script src="http://smartpx.io/sdk/smartpx.min.js?v=1.0"></script>
 <script type="text/javascript">
 	Smartpx.init({
-		is_check: true,
-		custom_fields: { "source": "7" }
+		is_check: false, // Redirect to Social Id detection service, default false
+		custom_fields: { 
+                        "source": <source_id>, // Required 
+                        "facebook_id": <facebook_id>, // Not require 
+                        "phone": <phone>, // Not require
+                        "email": <email>, // Not require
+                }
 	});
 </script>
 ```
