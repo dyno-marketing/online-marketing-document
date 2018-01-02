@@ -10,9 +10,9 @@ Insert the script bellow into the `<head>` element of client’s website
 		is_check: false, // Redirect to Social Id detection service, default false
 		custom_fields: { 
                         "source": <source_id>, // Require
-                        "facebook_id": <facebook_id>, // Not require 
-                        "phone": <phone>, // Not require
-                        "email": <email>, // Not require
+                        "f": <facebook_id>, // Not require 
+                        "p": <phone>, // Not require
+                        "e": <email>, // Not require
                 }
 	});
 </script>
