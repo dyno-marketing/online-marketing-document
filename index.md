@@ -9,10 +9,11 @@ Insert the script bellow into the `<head>` element of client’s website
 	Smartpx.init({
 		is_check: false, // Redirect to Social Id detection service, default false
 		custom_fields: {
-			"source": <source_id>, // Require
-			"f": <facebook_id>, // Not require
-			"p": <phone>, // Not require
-			"e": <email>, // Not require
+			"source": <int: source_id>, // Require
+			"f": <string: facebook_id>, // Not require - Default empty
+	                "is_newer_f_version": <boolean: is_newer_f_version> // Not require - Default false
+			"p": <string: phone>, // Not require - Default empty
+			"e": <string: email>, // Not require - Default empty
 		}
 	});
 </script>
