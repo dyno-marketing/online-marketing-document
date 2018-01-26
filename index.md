@@ -4,7 +4,7 @@
 ### Step 1
 Insert the script bellow into the `<head>` element of client’s website
 ```html
-<script src="https://smartpx.io/sdk/smartpx.min.js?v=1.1"></script>
+<script src="https://smartpx.io/sdk/smartpx.min.js?v=1.2"></script>
 <script type="text/javascript">
 	Smartpx.init({
 		is_check: false, // Redirect to Social Id detection service, default false
