@@ -14,6 +14,12 @@ Insert the script bellow into the `<head>` element of client’s website
 	                "is_newer_f_version": <boolean: is_newer_f_version> // Not require - Default false
 			"p": <string: phone>, // Not require - Default empty
 			"e": <string: email>, // Not require - Default empty
+	
+			// Special for mobile cases 
+			"d_i": <string: device_id>, // Require if client is mobile 
+			"ad_i": <string: advertising_id>, // Require if client is mobile 
+			"d_t": <string: device_type>, // Require if client is mobile (1 = Web,  2 = Mobile) 
+	                "d_o": <string: device_os>, // Require if client is mobile (1 = Window,  2 = Mac, 3 = Linux) (4 = Android, 5 = IOS, 6 = Winphone)
 		}
 	});
 </script>
