@@ -1,6 +1,6 @@
 # SmartPx Integration Document 
 
-## Integration Step 
+## Integration Steps
 ### Step 1
 Insert the script bellow into the `<head>` element of client’s website
 ```html
@@ -14,12 +14,6 @@ Insert the script bellow into the `<head>` element of client’s website
 	                "is_newer_f_version": <boolean: is_newer_f_version> // Not require - Default false
 			"p": <string: phone>, // Not require - Default empty
 			"e": <string: email>, // Not require - Default empty
-	
-			// Special for mobile cases 
-			"d_i": <string: device_id>, // Require if client is mobile 
-			"ad_i": <string: advertising_id>, // Require if client is mobile 
-			"d_t": <string: device_type>, // Require if client is mobile (1 = Web,  2 = Mobile) 
-	                "d_o": <string: device_os>, // Require if client is mobile (1 = Window,  2 = Mac, 3 = Linux) (4 = Android, 5 = IOS, 6 = Winphone)
 		}
 	});
 </script>
@@ -38,7 +32,7 @@ var session_id = Smartpx.getSession();
 Call SmartPx api to get demographic information and interest of ```session_id``` which belongs to specific user you want to target
 
 ## Api: 
-#### Base Url: ```https://gateway.dyno.me/online-marketing-api```
+### Base Url: ```https://gateway.dyno.me/online-marketing-api```
 
 ### Customer Demographic
 Path: /profiles/sessions/:session_id/demographic
@@ -68,43 +62,30 @@ Path: /categories
 ```
 * Reference: [DYNO Response Data Decode Document](https://docs.google.com/spreadsheets/d/1U84yleaRtQewOsbIqmkkJkB8fES9YdYcWH_Sej_ycYc/edit#gid=1975035837)
 
-### Error Code
-
-### API Login social
+# Mobile flow
+## Api
+### Base Url: ```https://gateway.dyno.me/social-login-api```
+## Integration Steps
 Path: /api/social
 * Method: Post
 * Params:
 ```json
 {    
-  "device_os": 1,
-  "device_type":1,
-  "extra_field": "KHANH",
-  "device_id":"18293894893892",
-  "advertising_id":"kjaksj",
-  "social_id":"18298918",
-  "social_type": 1,
-  "extra_field": "abc"
+  "d_o": <int: device_os>, // Require
+  "d_t": <int: device_type>, // Require
+  "d_i": <int: device_id>, // Require
+  "a_id": <int: advertising_id>, // Require
+  "s_i": <string: social_id>, // Require
+  "s_t": <string: social_type>, // Require
+  "is_newer_f_version": <boolean: is_newer_f_version> // Not require - Default false
+  "p": <string: phone>, // Not require - Default empty
+  "e": <string: email>, // Not require - Default empty
 }
 ```
 * Default value
 ``` 
-DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet/Ipad'), (99, 'Other')
-DEVICE_OS = (1, 'Window'), (2, 'Mac'), (3, 'Linux'),
-SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'),
-               (3, 'Instagram'), (4, 'Twitter'),
-               (5, 'Zalo'), (99, 'Other'))
-             (4, 'Android'), (5, 'IOS'), (6, 'Window Phone'), (99, 'Other')
+   DEVICE_OS = (1, 'Android'), (2, 'Ios'), (3, 'Winphone')
+   DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet/Ipad'), (99, 'Other')
+   SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
 ```
-* Response:
-```json
-{
-"id": "f1a70cdc-5e15-4217-9524-9e06683a9459",
-"social_id": "18298918",
-"device_os": 1,
-"extra_field": "KHANH",
-"device_id": "1",
-"advertising_id": "kjaksja",
-"social_type": 99,
-"device_type": 1
-}
-```
+
