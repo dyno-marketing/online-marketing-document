@@ -77,7 +77,7 @@ Path: /api/social
   "a_id": <int: advertising_id>, // Require
   "s_i": <string: social_id>, // Require
   "s_t": <string: social_type>, // Require
-  "is_newer_f_version": <boolean: is_newer_f_version> // Not require - Default false
+  "is_newer_f_version": <boolean: is_newer_f_version>, // Not require - Default false
   "p": <string: phone>, // Not require - Default empty
   "e": <string: email>, // Not require - Default empty
 }
