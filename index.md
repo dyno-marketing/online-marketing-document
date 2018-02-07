@@ -84,7 +84,10 @@ Path: /api/social
   "social_id":"18298918",
   "social_type": 1,
   "extra_field": "abc"
-} 
+}
+```
+* Default value
+``` 
 DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet/Ipad'), (99, 'Other')
 DEVICE_OS = (1, 'Window'), (2, 'Mac'), (3, 'Linux'),
 SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'),
