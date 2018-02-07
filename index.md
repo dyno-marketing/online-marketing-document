@@ -74,7 +74,7 @@ Path: /categories
 Path: /api/social
 * Method: Post
 * Params:
-```
+```json
 {    
   "device_os": 1,
   "device_type":1,
@@ -93,7 +93,7 @@ SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'),
              (4, 'Android'), (5, 'IOS'), (6, 'Window Phone'), (99, 'Other')
 ```
 * Response:
-```
+```json
 {
 "id": "f1a70cdc-5e15-4217-9524-9e06683a9459",
 "social_id": "18298918",
