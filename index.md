@@ -66,7 +66,7 @@ Path: /categories
 ## Api
 ### Base Url: ```https://gateway.dyno.me/social-login-api```
 ### App Login
-Path: /api/social
+Path: /platforms/mobile
 * Method: Post
 * Params:
 ```html
