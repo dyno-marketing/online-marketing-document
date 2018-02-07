@@ -65,11 +65,11 @@ Path: /categories
 # Mobile flow
 ## Api
 ### Base Url: ```https://gateway.dyno.me/social-login-api```
-## Integration Steps
+### App Login
 Path: /api/social
 * Method: Post
 * Params:
-```html
+```json
 {    
   "d_o": <int: device_os>, // Require
   "d_t": <int: device_type>, // Require
