@@ -69,7 +69,7 @@ Path: /categories
 Path: /api/social
 * Method: Post
 * Params:
-```json
+```html
 {    
   "d_o": <int: device_os>, // Require
   "d_t": <int: device_type>, // Require
