@@ -86,7 +86,7 @@ Path: /platforms/mobile
 * Default value
 ``` 
    DEVICE_OS = (1, 'Android'), (2, 'Ios'), (3, 'Winphone')
-   DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet/Ipad'), (99, 'Other')
-   SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
+   DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet')
+   SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
 ```
 
