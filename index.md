@@ -1,5 +1,6 @@
 # SmartPx Integration Document 
 
+# Web flow
 ## Integration Steps
 ### Step 1
 Insert the script bellow into the `<head>` element of client’s website
@@ -31,7 +32,7 @@ var session_id = Smartpx.getSession();
 ### Step 3 
 Call SmartPx api to get demographic information and interest of ```session_id``` which belongs to specific user you want to target
 
-## Api: 
+## Api Query Data 
 ### Base Url: ```https://gateway.dyno.me/online-marketing-api```
 
 ### Customer Demographic
