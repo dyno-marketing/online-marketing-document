@@ -63,7 +63,7 @@ Path: /categories
 * Reference: [DYNO Response Data Decode Document](https://docs.google.com/spreadsheets/d/1U84yleaRtQewOsbIqmkkJkB8fES9YdYcWH_Sej_ycYc/edit#gid=1975035837)
 
 # Mobile flow
-## Api
+## Api Push Data
 ### Base Url: ```https://gateway.dyno.me/social-login-api```
 ### App Login
 Path: /platforms/mobile
@@ -89,6 +89,8 @@ Path: /platforms/mobile
    DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet')
    SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
 ```
+## Api Query Data 
+### Base Url: ```https://gateway.dyno.me/online-marketing-api```
 
 ### Customer Demographic
 Path: /profiles/app_logins/:login_id/demographic
