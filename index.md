@@ -90,3 +90,21 @@ Path: /platforms/mobile
    SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
 ```
 
+### Customer Demographic
+Path: /profiles/app_logins/:login_id/demographic
+* Method: Get
+* Sample response: 
+```json
+{"has_error":false,"data":{"demographic":{"firstName":"Tu","lastName":"Pham","genderType":1,"middleName":"Phuong","locale":"en_US","sessionId":"ycsq99fao1f1501125848939", "age_group":"2"}}}
+```
+* Notes:
+- age_group: 0: 13 -> 17, 1: 18 -> 24, 2: 25 -> 34, 3: 35 -> 44, 4: 45 -> 54, 5: 55 -> 64, 6: 65+
+
+
+### Customer Interest
+Path: /profiles/app_logins/:login_id/interest
+* Method: Get
+* Sample response: 
+```json
+{"has_error":false,"data":{"top_categories":[{"score":"0","categoryId":"e4f43e90-670c-11e7-bbb9-2477038c8d04"},{"score":"83","categoryId":"a6156d20-670c-11e7-bbb9-2477038c8d04"},{"score":"96","categoryId":"c4f21f40-670c-11e7-bbb9-2477038c8d04"},{"score":"63","categoryId":"a20cdd30-670c-11e7-bbb9-2477038c8d04"},{"score":"0","categoryId":"1cda0c50-670c-11e7-bbb9-2477038c8d04"},{"score":"47","categoryId":"d174f120-670c-11e7-bbb9-2477038c8d04"}]}}
+```
