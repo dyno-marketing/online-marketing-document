@@ -89,6 +89,7 @@ Path: /platforms/mobile
    DEVICE_TYPE = (1, 'Phone'), (2, 'Tablet')
    SOCIAL_TYPE = (1, 'Facebook'), (2, 'Google Plus'), (3, 'Instagram'), (4, 'Twitter'), (5, 'Zalo')
 ```
+
 ## Api Query Data 
 ### Base Url: ```https://gateway.dyno.me/online-marketing-api```
 
